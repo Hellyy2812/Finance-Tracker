@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Finance Tracker</title>
+    <link rel="stylesheet" href="index.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+    <!-- <section id="sec1">
+        <div class="leftbar">
+        <h1>Finance track</h1>
+        <div class="pages">
+            <a href="#">Dashboard</a><br>
+            <a href="#">Transactions</a><br>
+            <a href="#">Insights</a><br>
+            <div class="setting">
+                <a href="#">Settings</a>
+            </div>
+            
+        </div>
+        
+
+        </div>
+    </section> -->
+
+    <div class="main">
+
+        <!-- SIDEBAR -->
+        <div class="sidebar">
+          <h2>Finance Tracker</h2>
+          <ul>
+           <li class="DashStyle" > <a href="#dashboardSection" >Dashboard</a></li>
+           <li class="transStyle"><a href="#transSection">Transactions</a></li>
+           <li class="insightStyle"><a href="#insightSection">Insights</a></li>
+          </ul>
+        </div>
+      
+
+        <div class="content">
+          <div class="topbar">
+            <h3>Welcome back</h3>
+      
+            <select id="roleToggle" style="height: 40px; width: 85px; background-color: whitesmoke;">
+              <option value="viewer">Viewer</option>
+              <option value="admin">Admin</option>
+            </select>
+</div>
+      
+          <!-- CARDS -->
+          <div class="cards">
+            <div class="card blue" id="balance"></div>
+            <div class="card green" id="income"></div>
+            <div class="card pink" id="expenses"></div>
+          </div>
+      
+          <!-- CHARTS -->
+          <div class="charts">
+            <div class="chart-box">
+              <canvas id="lineChart"></canvas>
+</div>
+      
+            <div class="chart-box">
+              <canvas id="pieChart"></canvas>
+            </div>
+
+ </div>
+</section>
+      
+          <!-- TRANSACTIONS -->
+<section id="transSection">
+          <div class="transactions">
+    <h3>Transactions</h3>
+      
+            <select id="filter">
+              <option value="all">All</option>
+              <option value="income">Income</option>
+              <option value="expense">Expense</option>
+            </select>
+      
+            <div id="list"></div>
+      
+            <div id="formBox" style="display:none;">
+              <input id="cat" placeholder="category">
+              <input id="amt" type="number" placeholder="amount">
+              <select id="type">
+
+
+                <option value="income">income</option>
+                <option value="expense">expense</option>
+              </select>
+
+
+              <button onclick="addData()">add</button>
+            </div>
+          </div>
+        </section>
+      
+<section id="insightSection">
+
+
+          <div class="insight">
+            <h3>Insights</h3>
+            <p id="insightText"></p>
+          </div>
+      
+        </div>
+ </div>
+  
+    </section>
+
+    <footer class="footer">
+      <p style="color: black;">Made by <a href="https://hellyy2812.github.io/hellysolanki/">Helly Solanki</a></p>
+    </footer>
+      
+
+
+
+      <script src="script.js"></script>
+
+    
+</body>
+</html>
