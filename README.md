@@ -3,7 +3,7 @@
 - There are 2 roles, where user can toggle between "Viewer" and "Admin" role.
 - Admin will have access to edit and update transactions,category wise. And data will be stored in Local storage.
 
- ##Core Features: 
+  #Core Features: 
  - Add income and expense transactions.
  - Categorize financial records.
  - View total balance, income, and expenses.
