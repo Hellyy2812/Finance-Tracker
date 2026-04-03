@@ -2,6 +2,7 @@
 - A simple and intuitive Finance Tracker web application to help users manage their income, expenses, and overall budget efficiently.
 - There are 2 roles, where user can toggle between "Viewer" and "Admin" role.
 - Admin will have access to edit and update transactions,category wise. And data will be stored in Local storage.
+- Technologies: JavaScript, HTML, CSS
 
 ##Core Features: 
  - Add income and expense transactions.
